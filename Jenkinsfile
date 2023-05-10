@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Deploy started"
                 sh 'echo using shell within Jenkinsfile'
-                echo 'Succesfullly deployed third time'
+                echo 'Succesfullly deployed fourth time'
             }
         }
     }
