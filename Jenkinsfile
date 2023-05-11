@@ -8,12 +8,12 @@ pipeline {
                 echo 'not using shell in the Jenkinsfile'
             }
         }
-        // stage('Deploy') {
-        //     steps {
-        //         echo "Deploy started"
-        //         sh 'echo using shell within Jenkinsfile'
-        //         echo 'Succesfullly deployed second day...'
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                echo "Deploy started"
+                sh 'echo using shell within Jenkinsfile'
+                echo 'Succesfullly deployed second day...'
+            }
+        }
     }
 }
