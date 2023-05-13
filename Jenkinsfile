@@ -3,14 +3,16 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Compiling the java source code'
-                sh 'javac Hello.java'
+                echo "Erkmustech to Reinvent Yourself"
+                sh 'echo using shell within Jenkinsfile'
+                echo 'not using shell in the Jenkinsfile'
             }
         }
-        stage('run') {
+        stage('Deploy') {
             steps {
-                echo 'Running the compiled java code.'
-                sh 'java Hello'
+                echo "Deploy started"
+                sh 'echo using shell within Jenkinsfile'
+                echo 'Succesfullly deployed from local'
             }
         }
     }
